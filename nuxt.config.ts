@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   srcDir: 'app/',
+  
   
   app: {
     head: {
@@ -25,5 +26,5 @@ export default defineNuxtConfig({
       email: 'master@rembyt.ru',
       address: 'г. Москва, ул. Примерная, д. 15'
     }
-  }
+  },
 })
