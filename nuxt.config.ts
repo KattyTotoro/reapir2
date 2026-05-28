@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
   devtools: { enabled: false },
   srcDir: 'app/',
-  
-  
+
+
   app: {
     head: {
       title: 'РемонтБытСервис — Мастер бытовой техники',
@@ -17,7 +17,10 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
       ]
-    }
+    },
+    // Меняет '_nuxt' в путях на 'assets'
+    buildAssetsDir: 'assets',
+    baseURL: '/reapir2/',
   },
 
   runtimeConfig: {
